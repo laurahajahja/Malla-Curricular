@@ -1,0 +1,53 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F7E9CC;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #DFAAB2;
+}
+
+.carousel {
+    display: flex;
+    overflow-x: auto;
+    gap: 16px;
+    padding: 10px;
+    scroll-behavior: smooth;
+}
+
+.semester {
+    min-width: 200px;
+    background-color: #F5DADF;
+    border: 2px solid #F8C7CA;
+    border-radius: 10px;
+    padding: 10px;
+    flex-shrink: 0;
+}
+
+.semester.locked {
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+.semester h2 {
+    text-align: center;
+    color: #B5636B;
+}
+
+.subject {
+    margin: 6px 0;
+    padding: 6px 8px;
+    border-radius: 6px;
+    background-color: #F8C7CA;
+    cursor: pointer;
+    user-select: none;
+}
+
+.subject.completed {
+    text-decoration: line-through;
+    background-color: #DFAAB2;
+}
